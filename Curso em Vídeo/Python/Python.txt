@@ -1,0 +1,2 @@
+import this - zen of python
+baterias incluídas: bibliotecas padrão que são instaladas junto com a instalação padrão
