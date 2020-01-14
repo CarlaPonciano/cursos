@@ -1,0 +1,13 @@
+Documentação Mautic: mautic.org/docs
+
+Versão online: mautic.com
+
+Requisitos: (o servidor ter que estar preparado)
+   - Php (7), Apache - configurações específicas: ebook Hostnet
+   - Banco de dados SQL: MySQL/Maria DB
+   - Não instalar em sub-diretórios Ex: cursoemvideo.com/mautic - não funciona muito bem. -> Instalar em sub domínio Ex: mautic.cursoemvideo.com -> info.cursoemvideo.com
+   - Acomselhável ter HTTPS/CDN (SSL)
+   - Serviço de email de boa qualidade (vídeo #16) - DMARC FTP SSH
+   - Crontab: agendador de tarefas
+   - Verificar se o provedor de email trabalha com bauncer: retorno dos emails enviados, para remover usuários q possuem por exemplos emails inválidos
+   - Usar um banco de dados só para o Mautic
