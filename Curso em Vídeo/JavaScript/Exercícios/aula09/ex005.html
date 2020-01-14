@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Resultado <strong>1</strong></p>
+    <p>Resultado 2</p>
+    <div id = 'teste'>Olá Mundo</div>
+    <div id = 'teste2'>Olá Mundo2</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        corpo.style.background = 'pink'
+        p1.style.color = 'red'
+        window.document.write(p1.innerHTML)
+        var div = window.document.getElementById('teste')
+        div.style.background = 'green'
+        div.innerText = 'aguardo..'
+        var d = window.document.querySelector('div#teste2')
+        d.style.background = 'purple'
+    </script>
+</body>
+</html>

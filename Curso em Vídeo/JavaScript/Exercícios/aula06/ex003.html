@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World!</title>
+    <style>
+        body{
+            background-color: rgb(233, 83, 113);
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Primeiro Teste!</p>
+    <script>
+        var n1, n2, soma
+        n1 = Number(window.prompt('Digite um número: '))
+        n2 = Number(window.prompt('Digite outro número: '))
+        soma = n1 + n2
+        window.alert(`A soma é ${soma}`)
+        document.writeln(soma.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}))
+        document.writeln(soma.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'}))
+        document.writeln(soma.toLocaleString('pt-br', {style: 'currency', currency: 'USD'}))
+    </script>
+</body>
+</html>
