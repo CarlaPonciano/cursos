@@ -1,0 +1,21 @@
+function rand( {min = 0, max = 1000} = {}){ //desestruturação
+    const valor = Math.random() * (max - min) + min
+    return Math.floor(valor)
+}
+
+const obj = { max: 50, min: 40 }
+
+console.log(rand(obj))
+console.log(rand({max: 955}))
+console.log(rand({}))
+console.log(rand())
+
+function teste(){
+    this.i = 0
+    setInterval(function(){
+        this.i++
+        console.log(this.i)
+    }, 1000)
+}
+
+new teste
